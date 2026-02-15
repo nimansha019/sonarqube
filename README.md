@@ -180,13 +180,3 @@ Add this to `pom.xml` if not present:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-**Thimothi Babu Ramagalla**  
-[GitHub Profile](https://github.com/thimothybabu123)
