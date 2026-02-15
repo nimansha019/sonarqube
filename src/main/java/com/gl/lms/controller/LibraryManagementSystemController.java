@@ -25,15 +25,12 @@ import java.util.List;
 @RequiredArgsConstructor
 public class LibraryManagementSystemController {
 
-  
-  private LibraryManagementSystemService libraryManagementSystemService;
+    private final LibraryManagementSystemService libraryManagementSystemService;
 
     @PostMapping("/add-user-and-issue-library-card")
-    public ResponseEntity<ResponseDTO> addUserAndIssueLibraryCard(@RequestBody @Valid UsersDTO usersDTO) throws  LibraryManagementSystemException{
-
+    public ResponseEntity<ResponseDTO> addUserAndIssueLibraryCard(@RequestBody @Valid UsersDTO usersDTO) throws LibraryManagementSystemException {
         ResponseDTO responseDTO = libraryManagementSystemService.addUserAndIssueLibraryCard(usersDTO);
-
-        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.CREATED);
+        return new ResponseEntity<>(responseDTO, HttpStatus.CREATED);
     }
 
 

@@ -17,19 +17,11 @@ import java.util.List;
 public  class LibraryManagementSystemServiceImpl implements LibraryManagementSystemService {
 
    
-    private UsersRepository usersRepository;
-
-    
-    private AuthorsRepository authorsRepository;
-
-   
-    private BooksRepository booksRepository;
-
-   
-    private LibraryCardsRepository libraryCardsRepository;
-
-   
-    private ReviewsRepository reviewsRepository;
+    private final UsersRepository usersRepository;
+    private final AuthorsRepository authorsRepository;
+    private final BooksRepository booksRepository;
+    private final LibraryCardsRepository libraryCardsRepository;
+    private final ReviewsRepository reviewsRepository;
 
     @Override
     public ResponseDTO addUserAndIssueLibraryCard(UsersDTO usersDTO) throws LibraryManagementSystemException {
